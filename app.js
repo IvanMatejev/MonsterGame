@@ -1,14 +1,14 @@
 function randomValue(min, max){
     return Math.floor(Math.random()*(max-min)+min);
 }
-
+//vue app
 const app=Vue.createApp({
     data(){
         return{
             monsterHealth: 100,
             playerHealth: 100,
             roundCounter: 0,
-            winner:  0,
+            winner:  null,
             logMessages: []
         }
     },
